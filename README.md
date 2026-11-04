@@ -6,7 +6,7 @@ A complete static, responsive satirical software consultancy website. No npm, fr
 Open `index.html` in a browser, or run `python3 -m http.server 8000` in this folder and visit http://localhost:8000.
 
 ## Publish on GitHub Pages
-1. Create a GitHub repository, e.g. `handcode` (public works with GitHub Free).
+1. The live repository is `boriskozak/handcode-love` (public, GitHub Free).
 2. Upload the CONTENTS of this folder to the repository root. `index.html` must be at the root, alongside `style.css`, `script.js`, `CNAME`, and `assets/`. Do not upload just the ZIP or an enclosing folder.
 3. In repository **Settings → Pages**, select **Deploy from a branch**, then **main** and **/(root)**. Save.
 4. Set **Custom domain** to `handcode.love` and save BEFORE changing DNS. The included `CNAME` file already contains that domain.
@@ -15,7 +15,7 @@ Open `index.html` in a browser, or run `python3 -m http.server 8000` in this fol
 ## Porkbun DNS
 GitHub Pages hosts the files; Porkbun remains your registrar and DNS provider. No Porkbun web-hosting plan is needed.
 
-In Porkbun Domain Management, choose handcode.love → DNS. Use **Quick DNS Config → Github**, then set `www` to `YOUR-GITHUB-USERNAME.github.io` (or your GitHub organization). Check existing records before applying a preset.
+In Porkbun Domain Management, choose handcode.love → DNS. Use **Quick DNS Config → Github**, then set `www` to `boriskozak.github.io`. Check existing records before applying a preset.
 
 Alternatively configure these records manually. A blank Porkbun Host means the root domain (often shown as @ elsewhere):
 
@@ -27,7 +27,7 @@ Alternatively configure these records manually. A blank Porkbun Host means the r
 | A | blank | 185.199.111.153 |
 | CNAME | www | YOUR-GITHUB-USERNAME.github.io |
 
-Replace YOUR-GITHUB-USERNAME with the account or organization that owns the repository. No https://, repository suffix, or slash in that DNS value. Replace conflicting root parking/forwarding A/AAAA/ALIAS records and conflicting www records; preserve email MX/TXT and unrelated records. Do not add a wildcard record. GitHub can redirect www to your configured root domain.
+The www record points at `boriskozak.github.io`, the account that owns the repository. No https://, repository suffix, or slash in that DNS value. Replace conflicting root parking/forwarding A/AAAA/ALIAS records and conflicting www records; preserve email MX/TXT and unrelated records. Do not add a wildcard record. GitHub can redirect www to your configured root domain.
 
 Current official guides checked November 2, 2026:
 - https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
@@ -50,4 +50,4 @@ Typography uses locally available Georgia and Arial; no external font requests. 
 The buttons open a working commission-brief dialog. Visitors can fill out, generate, edit and copy their brief. Nothing is submitted, stored or emailed; this is explicitly stated. No mailbox, booking service or backend has been assumed. To collect real enquiries later, connect a form endpoint or configure a real email address and update the form copy. A discreet footer colophon explains that this is satire and the imagery is imagined.
 
 ## Verification
-JavaScript syntax, local asset/anchor references, desktop render and commission brief flow checked. Mobile layout and navigation checked at 390 px in a browser iframe. Live GitHub deployment, DNS, HTTPS and email are not configured by this package.
+JavaScript syntax, local asset/anchor references, desktop render and commission brief flow checked. Mobile layout and navigation checked at 390 px in a browser iframe. Live status: GitHub Pages serves handcode.love from `main` with an approved certificate. Enforce HTTPS is not yet switched on in Pages settings. Email is not configured by this package.
