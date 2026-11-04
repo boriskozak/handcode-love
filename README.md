@@ -44,7 +44,7 @@ Current official guides checked November 2, 2026:
 - `.nojekyll`: keeps GitHub Pages from processing the site with Jekyll.
 - `robots.txt`, `sitemap.xml`: crawler configuration.
 
-Typography uses locally available Georgia and Arial; no external font requests, cookies or analytics.
+Typography uses locally available Georgia and Arial; no external font requests. The only third-party request is the Cloudflare Web Analytics beacon in index.html and 404.html; it collects no form data.
 
 ## Enquiries
 The buttons open a working commission-brief dialog. Visitors can fill out, generate, edit and copy their brief. Nothing is submitted, stored or emailed; this is explicitly stated. No mailbox, booking service or backend has been assumed. To collect real enquiries later, connect a form endpoint or configure a real email address and update the form copy. A discreet footer colophon explains that this is satire and the imagery is imagined.
