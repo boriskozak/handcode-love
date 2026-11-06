@@ -25,7 +25,7 @@ Alternatively configure these records manually. A blank Porkbun Host means the r
 | A | blank | 185.199.109.153 |
 | A | blank | 185.199.110.153 |
 | A | blank | 185.199.111.153 |
-| CNAME | www | YOUR-GITHUB-USERNAME.github.io |
+| CNAME | www | boriskozak.github.io |
 
 The www record points at `boriskozak.github.io`, the account that owns the repository. No https://, repository suffix, or slash in that DNS value. Replace conflicting root parking/forwarding A/AAAA/ALIAS records and conflicting www records; preserve email MX/TXT and unrelated records. Do not add a wildcard record. GitHub can redirect www to your configured root domain.
 
