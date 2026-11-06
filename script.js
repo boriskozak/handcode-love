@@ -4,7 +4,7 @@ const nav=document.querySelector('#navigation');
 function closeMenu(){menu.setAttribute('aria-expanded','false');nav.classList.remove('open');menu.querySelector('span').textContent='+';}
 menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));nav.classList.toggle('open',open);menu.querySelector('span').textContent=open?'−':'+';});
 nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
-document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){const wasOpen=menu.getAttribute('aria-expanded')==='true';closeMenu();if(wasOpen)menu.focus();}});
 const enquiry=document.querySelector('#enquiry');
 const form=document.querySelector('#brief-form');
 const result=document.querySelector('#brief-result');
